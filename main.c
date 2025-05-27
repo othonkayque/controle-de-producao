@@ -19,8 +19,8 @@ int simulaEsteira() {
 
 int main() {
     esteira1 = simulaEsteira();
-    esteira2 = simulaEsteira();
-    esteira3 = simulaEsteira();
+    esteira2 = esteira1;
+    esteira3 = esteira2;
     
     srand(time(NULL));
     int valor_perdido = rand() % 10 + 1;
@@ -29,7 +29,18 @@ int main() {
     printf("esteira1: %d\nesteira2: %d\nesteira3: %d\n", esteira1, esteira2, esteira3);
     printf("Porcentagem perdida: %d%%", calculaPerdaTotal(TOTAL_ESPERADO, esteira3));
 
+    if(esteira1 < esteira2 && esteira1 < esteira3) {
+        printf("A maioria dos produtos foram perdidos/danificados na esteira 1");
+    }
+    else if(esteira2 < esteira1 && esteira2 < esteira3) {
+        printf("A maioria dos produtos foram perdidos/danificados na esteira 2");
+    }
+    else if(esteira3 < esteira1 && esteira3 < esteira2) {
+        printf("A maioria dos produtos foram perdidos/danificados na esteira 3");
+    }
+    else {
+        printf("Não houveram perdas! :)");
+    }
+
     return 0;
 }
-
-
