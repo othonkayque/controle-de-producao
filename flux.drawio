@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="bKeCniUfdtDQdnIx8u1Z" name="Page-1">
-        <mxGraphModel dx="762" dy="1394" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1005" dy="1657" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -85,7 +85,7 @@
                 <mxCell id="26" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="27" target="30" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="27" value="Terceira" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="27" value="Terceira esteira" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="1500" y="140" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="28" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="30" target="34" edge="1">
@@ -121,20 +121,14 @@
                 <mxCell id="36" value="Variavel &lt;b&gt;esteira3 &lt;/b&gt;continua com o mesmo valor" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="1970" y="270" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="44" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="39" target="43" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
                 <mxCell id="46" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="39" target="45" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="39" value="Dados" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="39" value="Dados&lt;div&gt;(numero de produtos que passou por cada sensor)&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="2210" y="140" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="43" value="esteira1&lt;div&gt;esteira2&lt;/div&gt;&lt;div&gt;esteira3&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="2390" y="160" width="120" height="110" as="geometry"/>
-                </mxCell>
-                <mxCell id="45" value="Valor perdido em %" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="2390" y="90" width="120" height="60" as="geometry"/>
+                <mxCell id="45" value="Total perdido em %" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2380" y="140" width="120" height="60" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

@@ -2,26 +2,25 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define TOTAL_ESPERADO 30  // Total esperado de produtos
+#define TOTAL_ESPERADO 30
+int esteira1 = 0, esteira2 = 0, esteira3 = 0;
 
 int calculaPerdaTotal(int valorInicial, int valorFinal) {
     int resultado = ((valorInicial - valorFinal) * 100)  / valorInicial;
     return resultado;
 }
 
-int main() {
-    int esteira1 = 0, esteira2 = 0, esteira3 = 0;
-
-    for(esteira1; esteira1<TOTAL_ESPERADO; esteira1++){
-        if(esteira1 > TOTAL_ESPERADO/2){
-            for(esteira2; esteira2<=TOTAL_ESPERADO; esteira2++){
-                    if(esteira2 > TOTAL_ESPERADO/2){
-                        for(esteira3; esteira3<TOTAL_ESPERADO; esteira3++){
-                        }
-                    }
-            }
-        }
+int simulaEsteira() {
+    int i = 0;
+    for(i; i<TOTAL_ESPERADO; ++i) {
+        esteira1 = i;
     }
+}
+
+int main() {
+    esteira1 = simulaEsteira();
+    esteira2 = simulaEsteira();
+    esteira3 = simulaEsteira();
     
     srand(time(NULL));
     int valor_perdido = rand() % 10 + 1;
@@ -32,4 +31,5 @@ int main() {
 
     return 0;
 }
+
 
