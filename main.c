@@ -5,7 +5,6 @@
 #define TOTAL_ESPERADO 30
 int esteira1 = 0, esteira2 = 0, esteira3 = 0;
 
-int vetor[3];
 int perda[3];
 
 int calculaPerdaTotal(int valorInicial, int valorFinal) {
@@ -14,10 +13,11 @@ int calculaPerdaTotal(int valorInicial, int valorFinal) {
 }
 
 int simulaEsteira() {
-    int i = 0;
-    for(i; i<TOTAL_ESPERADO; i++) {
-        esteira1 = i;
+    int esteira = 0;
+    for(int i=0; i<TOTAL_ESPERADO; i++) {
+        esteira = i;
     }
+    return esteira;
 }
 
 void simulaPerda(int vetor[3]) {
