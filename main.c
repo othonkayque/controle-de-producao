@@ -50,9 +50,10 @@ int main() {
     esteira2 = esteira1 - perda[1];
     esteira3 = esteira2 - perda[2];
 
-    printf("esteira1: %d\nesteira2: %d\nesteira3: %d\n", esteira1, esteira2, esteira3);
-    printf("Porcentagem perdida: %d%%\n", calculaPerdaTotal(TOTAL_ESPERADO, esteira3));
+    system("cls");
+    printf("\nSensor 1: %d produtos ( %d produtos perdidos )\nSensor 2: %d produtos ( %d produtos perdidos )\nSensor 3: %d produtos ( %d produtos perdidos )\n", esteira1, perda[0], esteira2, perda[1], esteira3, perda[2]);
     verificaMaiorPerda();
+    printf("Porcentagem perdida: %d%%\n\n", calculaPerdaTotal(TOTAL_ESPERADO, esteira3));
 
     system("pause");
     return 0;
