@@ -27,7 +27,18 @@ Nosso projeto foi pensado para poder ser replicado em linhas de produção de di
 
 ## Fluxograma da ideia
 
-<iframe frameborder="0" style="width:100%;height:375px;" src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=#R%3Cmxfile%3E%3Cdiagram%20id%3D%22bKeCniUfdtDQdnIx8u1Z%22%20name%3D%22Page-1%22%3E7ZpNc9owEIZ%2FjWfaQzu2ZQgcw0fSS9sDnbY5CrRgNbZFZZmP%2FvpKQgIbOYEJFJqJL1hayba0r571WsZD%2FXR1z%2FE8%2FswIJF7ok5WHBl4YBqHfkQdlWRtLx1pmnBJj2xlG9A8Yo2%2BsBSWQVzoKxhJB51XjhGUZTETFhjlny2q3KUuqd53jGTiG0QQnrvUHJSLeWDstf2f%2FBHQW2zsHvmlJse1sDHmMCVuWTGjooT5nTGxK6aoPifKe9cvmvLsnWrcD45CJY04wfl%2FgpDBzM%2BMSaztZIHLuppqxTB568uJ8%2FVPWfVt5UJWPLVsdrMqNg7WpcVZkBIip5YKzx60DkbRMaZL0WcK4vjMKxjiAcNuz1OL77eGtnFNPwEqMrA%2FVRRM8hqTHOAFu%2B5tBb1rw5HGmh7HXOmWZsCYCU1wk0n%2B9WKSJNASy6HrWODtnBZ8YXxnvCcxnYHqhjUl5sXSaUeMeWArSQ7IDhwQLuqiuMGwW6mzbb6elLBg566UNHWm%2Fjn%2BBYHoWeY7lMVM%2FkAugHDu6n1%2Bseh%2BfTcJlTAWM5liLsZSh50gBF8DlGJ4Vx7beGGzXe%2FXlLgoEFu24FAHa%2Ful6thtUz4kqclFtXQvVm5dJu6Lip5myKj9YIWV5p6qqrMsSN4vhqMUQXWsxIGcx5OAG55il4yL%2FJ9q8%2BjCNWnthuu2G6U5NlO6cIUrbFLUJ0%2BchM3LJ7F6LzMiRltmMioCQLxrSax66azKpw4hGnSqi3QsmUoGbGTeInoBoy0U0CK7FaOtpRjOvj7xb1OB6Oq5hdEFea%2BLuCby%2BdVq7NbReLdftOsreEjqhLMPcU8upFyhu2aYLUzaCdYVTvNC7imb34ktD8WGK23vbFx%2BCS1LsRuaXUxy8dYrtA%2Fb%2FwNiOpqTt9zpE1Ya8oFmBdTGVvwrtFPK0hHjD8UGOoyrHyL8gx9ELN6temD2%2FRnb3ADwMc81LLupeil03uxrmasfJn3M2gTxXaOo6h7lMm1WDfhL%2FLnAm5J23gOviiuaCclBs668LCc1irDPuzRVJobPwm20u3uB%2BCPcO2tvOCo%2FEffvZ8STem%2B8O591qrknAo6t9eUBuBj6QrpIot%2FXsxpL09kyV3mVFCpxVUBaqowwE2oBlqCi20WGCdaaeQ5Yz%2Fr7B%2FDDmgb%2F3WA8u%2BZIduen5Nyaw6jIHTihRyuuw7tlMvpHzWTnDoHUxOWV1958R3Vb66w0a%2FgU%3D%3C%2Fdiagram%3E%3C%2Fmxfile%3E"></iframe>
+```mermaid
+graph TD;
+    Objeto_passa_na_esteira-->Objeto_detectado;
+    Objeto_passa_na_esteira-->Objeto_não_detectado;
+    Objeto_detectado-->Adicionar_+1_no_valor_da_variavel_esteiraN;
+    Objeto_não_detectado-->Variavel_esteiraN_continua_com_o_mesmo_valor;
+    Adicionar_+1_no_valor_da_variavel_esteiraN-->Esse_processo_se_repete_pelo_numero_de_esteiras;
+    Variavel_esteiraN_continua_com_o_mesmo_valor-->Esse_processo_se_repete_pelo_numero_de_esteiras;
+    Esse_processo_se_repete_pelo_numero_de_esteiras-->Dados;
+    Dados-->Total_perdido_em_%;
+    Dados-->Numero_de_produtos_que_passou_em_cada_esteira;
+```
 
 ## O que o programa faz?
 
