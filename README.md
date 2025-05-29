@@ -9,6 +9,7 @@
 ### Equipe:
 
 [Kayque Othon de Araújo Rolim](https://github.com/othonkayque)
+
 [Jhonatas Ferreira de Matos](https://github.com/jhonatasxp)
 
 <hr>
